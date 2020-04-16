@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <div id="contain">
+        <div id="box">
+            <div class="title">
+                <a href="#" class="class1" onclick="setStyle1()">全部</a>
+                <a href="#" class="class2" onclick="setStyle2()">眼科健康</a>
+                <a href="#" class="class3" onclick="setStyle3()">抗击肺炎</a>
+            </div>
+            <!-- 第一个框 -->
+            <div id="head">
+                <div class="div1">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                </div>
+                <div class="div2">
+                    <span class="div3">置顶</span>
+                    <span class="div4">厦门日报</span>
+                    <span class="div5">50分钟前</span>
+                    <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                </div>
+            </div>
+
+            <!-- 第二个框的内容 -->
+            <div id="head">
+                <div class="div1">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                </div>
+                <div class="div2">
+                    <span class="div3">热门</span>
+                    <span class="div4">厦门日报</span>
+                    <span class="div5">50分钟前</span>
+                    <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                </div>
+            </div>
+            <!-- 第三个带图片的框 -->
+            <div id="head3">
+                <div class="left">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同...</p>
+                    <div class="foot">
+                        <span class="div4">厦门日报</span>
+                        <span class="div5">50分钟前</span>
+                        <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/1.png">
+                </div>
+            </div>
+            <!-- 第四个框 -->
+            <div id="banner">
+                <div class="top1">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                    <div class="image">
+                        <img src="img/2.png">
+                    </div>
+                    <div class="div2">
+                        <span class="div3">热门</span>
+                        <span class="div4">厦门日报</span>
+                        <span class="div5">50分钟前</span>
+                        <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 第五个框 -->
+            <div id="add">
+                <div class="train">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                    <div class="image1">
+                        <img class="image11" src="img/3.png"><img src="img/3.png"><img src="img/3.png">
+                    </div>
+                    <div class="div2">
+                        <span class="div3">广告</span>
+                        <span class="div4">老年培训</span>
+                        <span class="div5">50分钟前</span>
+                        <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 第6个框 -->
+            <div id="add">
+                <div class="train">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                    <div class="image1">
+                        <img class="image11" src="img/3.png"><img src="img/3.png"><img src="img/3.png">
+                    </div>
+                    <div class="div2">
+                        <span class="div3">广告</span>
+                        <span class="div4">老年培训</span>
+                        <span class="div5">50分钟前</span>
+                        <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 第7个框 -->
+            <div id="add">
+                <div class="train">
+                    <p>语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业</p>
+                    <div class="image1">
+                        <img class="image11" src="img/3.png"><img src="img/3.png"><img src="img/3.png">
+                    </div>
+                    <div class="div2">
+                        <span class="div3">广告</span>
+                        <span class="div4">老年培训</span>
+                        <span class="div5">50分钟前</span>
+                        <span class="div6"><img src="img/common_ic_close_gray_ccc_30＊22 .png"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div id="footer">
+                <p>我也是有底线的～</p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- 给眼科健康和抗击肺炎添加盒子 -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+
+    <script>
+        var oBtn1 = document.getElementById('head');
+        var oBtn2 = document.getElementById('box1');
+        var oBtn3 = document.getElementById('box2');
+
+        function setStyle1() {
+            oBtn1.style.display = 'block';
+            oBtn2.style.display = 'none';
+            oBtn3.style.display = 'none';
+
+        }
+
+        function setStyle2() {
+            oBtn1.style.display = 'none';
+            oBtn2.style.display = 'block';
+            oBtn3.style.display = 'none';
+
+        }
+
+        function setStyle3() {
+
+            oBtn1.style.display = 'none';
+            oBtn2.style.display = 'none';
+            oBtn3.style.display = 'block';
+
+        }
+    </script>
+</body>
+
+</html>
