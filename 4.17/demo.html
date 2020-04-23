@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 数组的扁平化，就是将一个嵌套多层的数组 array (嵌套可以是任何层数)转换为只有一层的数组。 -->
+    <script>
+        var arr = [
+            [1, 2],
+            [0, 3, 5],
+            [-1, 4]
+        ];
+        //1： 使用join/toString将其转为字符串，在使用split方法转换为一维数组。
+        var result = arr.join(',').split(',');
+        var result1 = arr.toString(',').split(',');
+        var num1 = result1.map(Number);
+        console.log(result);
+        console.log(result1);
+        console.log(num1);
+        // 2
+        var arr = [
+            [1, 2],
+            [0, 3, 5],
+            [-1, 4]
+        ];
+        var num = [];
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                num.push(arr[i][j]);
+            }
+        }
+        console.log(num);
+        // 3
+        var arr1 = [
+            [1, 2],
+            [0, 3, 5],
+            [6, 4]
+        ];
+        arr1 = arr1.flat(Infinity); //无论几层数组都会转为一维数组
+        console.log(arr1);
+        // 数组去重
+        // 1
+        var demo = [1, 2, 3, 5, 3, 3, 2, 6];
+        for (var i = 0; i < demo.length; i++) {
+            for (var j = i + 1; j < demo.length; j++) {
+                if (demo[i] == demo[j]) {
+                    demo.splice(j, 1);
+                    j--;
+                }
+            }
+        }
+        console.log(demo);
+        // 2
+        demo = [...new Set(demo)];
+        console.log(demo);
+        // 3
+    </script>
+</body>
+
+
+</html>

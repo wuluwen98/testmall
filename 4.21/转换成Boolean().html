@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 结果均为false
+        console.log(Boolean(''));
+        console.log(Boolean(null));
+        console.log(Boolean(undefined));
+        console.log(Boolean(0));
+        console.log(Boolean(NaN));
+        //结果均为true
+        console.log(Boolean('我是小吴'));
+        console.log(Boolean('123'));
+
+
+        var num = 10;
+        // 后置递增  口诀：先返回原值 后自加
+        console.log(num++ + 10); //20
+        // 前置递增  最早num = 10==>后自加num++ = 11==>++num=12
+        console.log(++num + 10); //22
+    </script>
+</body>
+
+</html>

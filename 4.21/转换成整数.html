@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(parseInt('32.4')); //蓝色是数值型  32
+        console.log(parseInt('120px')); //蓝色是数值型  120  去掉px
+        console.log(parseInt('rem123')); //蓝色是数值型   NaN
+        console.log(parseFloat('345.67')); //蓝色是数值型 345.67
+        console.log(parseFloat('120px')); //蓝色是数值型 120  去掉px
+        console.log(parseFloat('rem123')); //蓝色是数值型 NaN
+        console.log(Number('12')); //蓝色是数值型 12
+        console.log('123' - '12'); //蓝色是数值型 111
+
+        var year = prompt('请输入您的出生年份');
+        var age = 2020 - year;
+        alert('您今年已经' + age + '岁了');
+
+        var num1 = prompt('请输入您的第一个值');
+        var num2 = prompt('请输入您的第二个值');
+        var result = parseFloat(num1) + parseFloat(num2);
+        alert('您的结果是:' + result)
+    </script>
+</body>
+
+</html>

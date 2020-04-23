@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 打印100句你好
+        for (var i = 0; i < 100; i++) {
+            console.log('你好');
+        }
+        // 打印1-100的累积和
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        console.log(sum);
+
+        // var sum = 0;
+        // var average = 0;
+        // var num = prompt("请输入班级总人数");
+        // for (var i = 1; i <= num; i++) {
+        //     var score = prompt('请输入第' + i + '个学生的成绩');
+        //     sum += parseFloat(score);
+        // }
+        // average = sum / num;
+        // alert('班级总分数为:' + sum);
+        // alert('班级平均分数为:' + average);
+        // 打印五行五列的星星
+        var str = '';
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= 5; j++) {
+                str = str + '*';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+
+        // 打印三角形
+        var str = '';
+        for (var i = 1; i <= 10; i++) {
+            for (var j = i; j <= 10; j++) {
+                str = str + '*';
+            }
+            str = str + '\n'
+
+        }
+        console.log(str);
+
+        // 九九乘法表
+        var str = '';
+        for (var i = 1; i < 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                str += j + '*' + i + '=' + i * j + '\t'
+            }
+            str = str + '\n'
+        }
+        console.log(str);
+
+        // while
+        var num = 1;
+        while (num <= 100) {
+            console.log('你好');
+            num++;
+
+        }
+        var age = 1;
+        while (age <= 100) {
+            console.log('这人今年' + age + '岁');
+            age++;
+
+        }
+        // 打印1-100的累计和
+        var sum = 0;
+        var j = 1;
+        while (j <= 100) {
+            sum += j;
+            j++;
+        }
+        console.log(sum);
+
+        // var message = prompt('你好吗');
+        // while (message != '你好') {
+        //     message = prompt('你好吗');
+        // }
+        // alert('你好');
+
+        // do while 
+        var num = 1;
+        do {
+            console.log('这人今年' + num + '岁');
+            num++;
+        } while (num <= 100);
+        // 打印1-100的和
+        var sum = 0;
+        var j = 1;
+        do {
+            sum += j;
+            j++
+        } while (j <= 100);
+        console.log(sum);
+
+        // continue  跳出本次循环（当前次的循环）进行下剩余次数循环
+        for (var i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log('我在吃第' + i + '个包子');
+
+        }
+        // 1-100除了能被7整除的之外的累计和
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                continue;
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</body>
+
+</html>

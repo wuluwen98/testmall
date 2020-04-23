@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 创建数组  声明数组并赋值叫做数组的初始化
+        var arr = [];
+        var arr1 = ['小王', '小红'];
+        var arr2 = new Array();
+        console.log(arr);
+        console.log(arr1);
+        console.log(arr2);
+        // 数组名[索引]的形式获取数组中的元素
+        console.log(arr1[0]); //小王
+        console.log(arr1[3]); //undefined
+        // 遍历数组
+        var demo = ['a', 'b', 'c'];
+        for (var i = 0; i < demo.length; i++) {
+            console.log(demo[i]);
+        }
+        // 求数组的和及平均数
+        var arr = [1, 2, 3, 4, 5];
+        var sum = 0;
+        var average = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        average = sum / arr.length;
+        console.log('总分:' + sum + '');
+        console.log('平均分:' + average + '');
+        // 求数组里的最大值
+        var str = [2, 4, 6, 8, 3, 10, 1];
+        var max = str[0];
+        for (var i = 0; i < str.length; i++) {
+            if (str[i] > max) {
+                max = str[i]
+            }
+        }
+        console.log(max);
+        // 转换为字符串并用|分割
+        var strr = ['red', 'blue', 'green'];
+        var str = '';
+        var sep = '|';
+        for (var i = 0; i < strr.length; i++) {
+            str += strr[i] + sep;
+        }
+        console.log(str);
+        // 数组中新增元素
+        var array = ['1', 'xiao', 'er'];
+        array[3] = 'xiaox';
+        console.log(array);
+        console.log(array.length);
+        array.length = 5;
+        console.log(array);
+        // 新建一个数组存放1-10
+        var empty = [];
+        for (var i = 0; i < 10; i++) {
+            empty[i] = i + 1;
+        }
+        console.log(empty);
+        // 数组中大于10的数选出来
+        var max = [22, 3, 5, 7, 14, 12, 6, 8, 11];
+        var newArray = [];
+        var j = 0;
+        for (var i = 0; i < max.length; i++) {
+            if (max[i] >= 10) {
+                newArray[j] = max[i];
+                j++;
+            }
+        }
+        console.log(newArray);
+        // 方法2
+        var max1 = [22, 3, 5, 7, 14, 12, 6, 8, 11];
+        var newArray1 = [];
+        for (var i = 0; i < max1.length; i++) {
+            if (max[i] >= 10) {
+                newArray1[newArray1.length] = max1[i];
+            }
+        }
+        console.log(newArray1);
+        // 将数组里除了0的数取出来放在新数组
+        var newa = [11, 2, 3, 0, 4, 0, 3, 0, 5];
+        var temp = [];
+        for (var i = 0; i < newa.length; i++) {
+            if (newa[i] != 0) {
+                temp[temp.length] = newa[i];
+            }
+        }
+        console.log(temp);
+        // 1数组颠倒
+        var dd = ['blue', 'red', 'green'];
+        var newdd = [];
+        for (var i = dd.length - 1; i >= 0; i--) {
+            newdd[newdd.length] = dd[i];
+        }
+        console.log(newdd);
+        // 2数组颠倒
+        var newdd1 = dd.reverse();
+        console.log(newdd1);
+        // 冒泡排序
+        var big = [1, 2, 3, 6, 5, 7, 4];
+        for (var i = 0; i < big.length - 1; i++) {
+            for (var j = 0; j < big.length - i - 1; j++) {
+                if (big[j] > big[j + 1]) {
+                    var temp = big[j];
+                    big[j] = big[j + 1];
+                    big[j + 1] = temp;
+                }
+            }
+        }
+        console.log(big);
+    </script>
+</body>
+
+</html>

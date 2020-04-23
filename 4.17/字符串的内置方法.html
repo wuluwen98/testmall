@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        
+        text {
+            display: inline-block;
+        }
+        
+        .div1 {
+            text-align: left;
+        }
+        
+        .div2 {
+            text-align: right;
+            /* display: inline-block; */
+        }
+        
+        .top {
+            width: 300px;
+            /* height: 300px; */
+            /* background-color: red; */
+        }
+        
+        .bottom {
+            width: 300px;
+            /* height: 300px; */
+            /* background-color: pink; */
+        }
+        
+        .left,
+        .right,
+        .left1,
+        .right1 {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom">
+        <div class="left1"></div>
+        <div class="right1"></div>
+    </div>
+
+
+    <script>
+        for (var i = 1; i <= 4; i++) {
+            var div = document.createElement('div')
+            var body = document.body;
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = j;
+                div.appendChild(text)
+            }
+            body.appendChild(div)
+        }
+
+        for (var i = 4; i > 0; i--) {
+            for (var j = 1; j <= i; j++) {
+                console.log(j);
+
+            }
+            console.log('\n');
+
+        }
+
+        var left = document.querySelector('.left');
+        console.log(left);
+
+        var right = document.querySelector('.right');
+
+        var left1 = document.querySelector('.left1');
+        console.log(left);
+
+        var right1 = document.querySelector('.right1');
+
+        for (var i = 1; i <= 4; i++) {
+            var div = document.createElement('div');
+            var body = document.body;
+            for (var k = 1; k <= 4 - i; k++) {
+                var text = document.createElement('text');
+                text.innerHTML = '&nbsp;&nbsp;&nbsp;';
+                div.appendChild(text);
+            }
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '&nbsp;' + '*' + '&nbsp;';
+                div.appendChild(text);
+            }
+            body.appendChild(div);
+
+        }
+
+        for (var i = 4; i > 0; i--) {
+            var div = document.createElement('div');
+            var body = document.body;
+            for (var j = 1; j <= 4 - i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '&nbsp;&nbsp;&nbsp;';
+                div.appendChild(text);
+
+            }
+            for (var k = 1; k <= i; k++) {
+                var text = document.createElement('text');
+                text.innerHTML = '&nbsp;' + '*' + '&nbsp;';
+                div.appendChild(text);
+
+            }
+            body.appendChild(div);
+
+        }
+
+        for (var i = 1; i <= 3; i++) {
+            var div = document.createElement('div');
+            var body = document.body;
+            for (var j = 1; j <= 2 * i - 1; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+            }
+
+            body.appendChild(div);
+        }
+        for (var i = 1; i <= 2; i++) {
+            var div = document.createElement('div');
+            var body = document.body;
+            for (var j = 1; j <= 5 - 2 * i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+
+            }
+            body.appendChild(div);
+        }
+
+        for (var i = 4; i > 0; i--) {
+            var div = document.createElement('div');
+            div.classList.add('div1');
+            var body = document.body;
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+
+            }
+            left.appendChild(div);
+        }
+        for (var i = 4; i > 0; i--) {
+            var div = document.createElement('div');
+            div.classList.add('div2');
+            var body = document.body;
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+
+            }
+            right.appendChild(div);
+        }
+
+
+        for (var i = 1; i <= 4; i++) {
+            var div = document.createElement('div');
+            div.classList.add('div1');
+            var body = document.body;
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+
+            }
+            left1.appendChild(div);
+        }
+        for (var i = 1; i <= 4; i++) {
+            var div = document.createElement('div');
+            div.classList.add('div2');
+            var body = document.body;
+            for (var j = 1; j <= i; j++) {
+                var text = document.createElement('text');
+                text.innerHTML = '*';
+                div.appendChild(text);
+
+            }
+            right1.appendChild(div);
+        }
+    </script>
+</body>
+
+</html>

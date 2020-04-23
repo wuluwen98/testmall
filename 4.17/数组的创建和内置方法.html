@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 创建数组的四种方法
+        // 1
+        var s = new Array();
+        s[0] = 1;
+        s[1] = 2;
+        console.log(s);
+        //2
+        var a = [1, 2];
+        console.log(a);
+        // 3
+        var b = new Array(2);
+        b[0] = 1;
+        b[1] = 2;
+        console.log(b);
+        // 4
+        var c = new Array(1, 2);
+        console.log(c);
+        // 数组的内置方法
+        var arr = [1, 2, 3, 5, 6, 8];
+        var newArr = arr.pop(); //内置方法删除最后一个元素并返回
+        console.log(newArr);
+        var result = arr.shift(); ////内置方法删除第一个元素并返回
+        console.log(result);
+        console.log(arr.reverse()); //颠倒数组
+
+        var num = [1, 5, 7, 9, 3, 8, 9];
+        var newNum = num.slice(2, 3); //从下标2开始删除不包含下标为3的元素
+        console.log(newNum);
+
+        var num1 = [1, 5, 6, 9, 3, 4, 9];
+        var newNum1 = num1.splice(2, 1); //纯删除 ，删除下标是2的元素
+        console.log(newNum1);
+        var score = [1, 2, 3, 4, 5, 6];
+        score.splice(2, 0, "A", "B"); //内置方法，向数组中添加，删除并返回项目，会改变原数组,第二个参数表示删除元素个数，第一个参数为起始点。三四两个参数是添加的元素
+        for (var i in score) //这个是从下标为2的元素开始，在其之前添加元素
+        {
+            console.log(score[i]);
+        }
+
+        var num2 = [3, 4, 6, 8, 0, 2];
+        var result1 = num2.push(6); //在数组的最后添加元素
+        console.log(num2);
+        var num3 = [3, 4, 6, 8, 0, 2];
+        var result2 = num3.unshift('wu'); //在数组的开头添加元素
+        console.log(num3);
+        d = [1, 2, 1, 2, 1];
+        var result3 = num3.concat(d); //合并两个数组
+        console.log(result3);
+
+        var num4 = ['小吴', '小胡', '小卫'];
+        var result4 = num4.join('$');
+        console.log(result4);
+    </script>
+</body>
+
+</html>

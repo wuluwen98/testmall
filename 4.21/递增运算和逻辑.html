@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = 10;
+        // 后置递增  口诀：先返回原值 后自加
+        console.log(num++ + 10); //20
+        // 前置递增  口诀：先自加后运算   最早num = 10==>后自加num++ = 11==>++num=12
+        console.log(++num + 10); //22
+
+        var a = 10;
+        ++a; //11
+        var b = ++a + 2; //12+2
+        console.log(b); //14
+
+        var a = 10;
+        a++; //11
+        var b = a++ + 2; //11+2
+        console.log(b); //13
+
+        var a = 10;
+        var b = a++ + ++a; // a++=10  a=11  ++a=12
+        console.log(b); //22
+
+        var num = 0;
+        console.log(num && 123); //0
+        console.log(123 || num++); //123
+        console.log(num); //0
+    </script>
+</body>
+
+</html>
